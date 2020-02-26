@@ -3,7 +3,9 @@
 @import 'fonts';
  
 // start header
-
+.header{
+    background-color: #fff;
+}
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -102,6 +104,7 @@
     }
 }
 .basket {
+    margin-right: 20px;
     span {
         background-color: $green;
     }
@@ -117,7 +120,6 @@
 }
 .user{
     position: relative;
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     &::before{
@@ -166,6 +168,7 @@
             border-width: 1px;
             padding: 20px;
             overflow: auto;
+            z-index: 1;
         }
     }
 }
@@ -194,6 +197,7 @@
     overflow: hidden;
     border-top: 1px solid #e0e0e0;
     transition: all .3s;
+    z-index: 1;
 }
 .basket__box,
 .massage__box,
@@ -298,6 +302,11 @@
 }
 .icons-color::before{
     color: $orange;
+}
+
+.header__btn-menu,
+.menu__btn{
+    display: none;
 }
 // end header
 // start search
@@ -1176,3 +1185,5 @@ button.icon-unsorted{
 
 
 //end product-page
+
+@import 'media';
